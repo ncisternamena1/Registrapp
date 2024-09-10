@@ -14,6 +14,7 @@ const routes: Routes = [
   },
   { path: 'profesor-dashboard', component: ProfesorDashboardPage },
   { path: 'alumnos-list', component: AlumnosListPage },
+ 
 ];
 
 
