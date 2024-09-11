@@ -25,7 +25,17 @@ const routes: Routes = [
   {
     path: 'escanear-qr',
     loadChildren: () => import('./escanear-qr/escanear-qr.module').then( m => m.EscanearQrPageModule)
+  },  {
+    path: 'generar-qr',
+    loadChildren: () => import('./generar-qr/generar-qr.module').then( m => m.GenerarQrPageModule)
   },
+  {
+    path: 'generar-reporte',
+    loadChildren: () => import('./generar-reporte/generar-reporte.module').then( m => m.GenerarReportePageModule)
+  },
+
+  
+
  
 ];
 

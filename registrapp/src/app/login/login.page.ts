@@ -12,7 +12,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class LoginPage {
   loginForm: FormGroup;
 
-  constructor(private router: Router, private fb: FormBuilder) {  // Inyectar el Router en el constructor
+  constructor(private router: Router, private fb: FormBuilder) { 
     this.loginForm = this.fb.group({
       username: ['', Validators.required],
       password: ['', Validators.required]

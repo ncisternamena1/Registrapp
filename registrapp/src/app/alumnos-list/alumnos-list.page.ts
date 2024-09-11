@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-alumnos-list',
@@ -7,11 +8,20 @@ import { Component } from '@angular/core';
 })
 export class AlumnosListPage {
   alumnos = [
-    { nombre: 'Alumno 1' },
-    { nombre: 'Alumno 2' },
-    { nombre: 'Alumno 3' },
-    // Añade más alumnos aquí
+    { nombre: ' ADOLFO HITLER.' },
+    { nombre: ' OSAMA BIN LADEN' },
+    { nombre: 'SADDAM HUSSEIN.' },
+    { nombre: 'Juan' },
+    
   ];
 
-  constructor() { }
+  constructor(private router: Router) {}
+
+  goToGenerateQR() {
+    this.router.navigate(['/generar-qr']);
+  }
+
+  goToGenerateReport() {
+    this.router.navigate(['/generar-reporte']);
+  }
 }
