@@ -10,7 +10,7 @@ export class ProfesorDashboardPage {
 
   constructor(private router: Router) { }
 
-  // Método que se ejecuta al hacer clic en una sección
+
   openSection(section: string) {
     this.router.navigate(['/alumnos-list']);
   }

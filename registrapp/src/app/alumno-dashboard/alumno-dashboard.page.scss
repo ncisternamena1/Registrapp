@@ -1,0 +1,19 @@
+.custom-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .button-container {
+    width: 80%;
+  }
+  
+  .custom-button {
+    --border-radius: 20px;
+    margin-bottom: 20px;
+    
+    color: white;
+  }
+  

@@ -14,6 +14,18 @@ const routes: Routes = [
   },
   { path: 'profesor-dashboard', component: ProfesorDashboardPage },
   { path: 'alumnos-list', component: AlumnosListPage },
+  {
+    path: 'recoverypass',
+    loadChildren: () => import('./recoverypass/recoverypass.module').then( m => m.RecoverypassPageModule)
+  },
+  {
+    path: 'cursos',
+    loadChildren: () => import('./cursos/cursos.module').then( m => m.CursosPageModule)
+  },
+  {
+    path: 'escanear-qr',
+    loadChildren: () => import('./escanear-qr/escanear-qr.module').then( m => m.EscanearQrPageModule)
+  },
  
 ];
 

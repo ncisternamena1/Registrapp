@@ -1,0 +1,24 @@
+
+
+<ion-content class="custom-padding">
+  <div class="centered-container">
+    <h2>Recuperar tu contraseña</h2>
+    <p>Ingresa tu correo para restablecer tu contraseña.</p>
+    
+    <ion-card>
+      <img src="assets/img/duocuc-1.png" alt="Duoc" id="imgDuoc">
+      <ion-card-content>
+        <form [formGroup]="recoverForm">
+          <ion-item>
+            <ion-label position="floating">Correo electronico</ion-label>
+            <ion-input type="email" formControlName="email"></ion-input>
+          </ion-item>
+          <ion-button expand="block" type="submit" disabled="true">Enviar</ion-button>
+        </form>
+      </ion-card-content>
+    </ion-card>
+    
+    <p class="info-text">Te llegarÁ un correo con los pasos para recuperar tu contraseña.</p>
+  </div>
+</ion-content>
+<img src="assets/img/duocuc-1.png" alt="Duoc" id="imgDuoc">

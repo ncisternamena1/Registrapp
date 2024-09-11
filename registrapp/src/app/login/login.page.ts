@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';  // Importar el Router
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { NavController } from '@ionic/angular';
+
 
 
 @Component({
@@ -22,15 +22,15 @@ export class LoginPage {
     const { username, password } = this.loginForm.value;
     
     if (username === 'Lucas' && password === 'profesor123') {
-      this.router.navigate(['/profesor-dashboard']);
+      this.router.navigate(['/profesor-dashboard'], { queryParams: { name: 'Lucas' } });
     } else if (username === 'Benjamin' && password === 'alumno123') {
-      this.router.navigate(['/alumno-dashboard']);
+      this.router.navigate(['/alumno-dashboard'],{ queryParams: { name: 'Benjamin' } });
     } else {
       alert('Usuario o contraseña incorrecta');
     }
   }
   
   recoverPassword() {
-    this.router.navigate(['/recover-password']); 
+    this.router.navigate(['/recoverypass']);
   }
 }
