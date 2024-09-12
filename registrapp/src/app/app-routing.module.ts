@@ -4,7 +4,7 @@ import { ProfesorDashboardPage } from './profesor-dashboard/profesor-dashboard.p
 import { AlumnosListPage } from './alumnos-list/alumnos-list.page';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: '', redirectTo: 'intro', pathMatch: 'full' },
   { path: 'login', loadChildren: () => import('./login/login.module').then(m => m.LoginPageModule) },
   { path: 'profesor-dashboard', loadChildren: () => import('./profesor-dashboard/profesor-dashboard.module').then(m => m.ProfesorDashboardPageModule) },
   { path: 'alumno-dashboard', loadChildren: () => import('./alumno-dashboard/alumno-dashboard.module').then(m => m.AlumnoDashboardPageModule) },
@@ -25,13 +25,18 @@ const routes: Routes = [
   {
     path: 'escanear-qr',
     loadChildren: () => import('./escanear-qr/escanear-qr.module').then( m => m.EscanearQrPageModule)
-  },  {
+  },
+  {
     path: 'generar-qr',
     loadChildren: () => import('./generar-qr/generar-qr.module').then( m => m.GenerarQrPageModule)
   },
   {
     path: 'generar-reporte',
     loadChildren: () => import('./generar-reporte/generar-reporte.module').then( m => m.GenerarReportePageModule)
+  },
+  {
+    path: 'intro',
+    loadChildren: () => import('./intro/intro.module').then( m => m.IntroPageModule)
   },
 
   

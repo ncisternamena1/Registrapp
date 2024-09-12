@@ -1,0 +1,40 @@
+// Estilos para el header
+.header-toolbar {
+    --background: #012C56; // Fondo azul oscuro
+    --color: #FFFFFF; // Texto blanco
+  }
+  
+  .content {
+    --background: #FFB71B; // Fondo amarillo
+    padding: 0; // Elimina el espaciado adicional
+  }
+  
+  .custom-card {
+    background: #FFB71B; // Fondo amarillo para el card
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Sombra ligera para el card
+    border-radius: 8px; // Bordes redondeados para el card
+    margin: 16px; // Espacio alrededor del card
+  }
+  
+  .custom-card ion-card-header {
+    background: #FFB71B; // Fondo amarillo para el card-header
+    color: #012C56; // Texto azul en el card-header
+  }
+  
+  .custom-card ion-card-content {
+    background: #FFB71B; // Fondo amarillo para el card-content
+    padding: 16px; // Espaciado interno
+  }
+  
+  .button-container {
+    margin-top: 16px; // Espacio superior para los botones
+  }
+  
+  .custom-button {
+    --background: #012C56; // Fondo azul para los botones
+    --color: #FFFFFF; // Texto blanco
+    --border-radius: 10px; // Bordes redondeados
+    margin-top: 8px; // Espacio entre los botones
+    padding: 12px;
+  }
+  

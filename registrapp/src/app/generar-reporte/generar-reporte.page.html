@@ -1,13 +1,25 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>generar-reporte</ion-title>
+<ion-header>
+  <ion-toolbar class="header-toolbar">
+    <ion-title>Generar Reporte</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">generar-reporte</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="content">
+  <ion-card class="custom-card">
+    <ion-card-header>
+      <ion-card-title>Generar Reporte</ion-card-title>
+      <ion-card-subtitle>Ingrese los detalles necesarios</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-input placeholder="Ingrese los detalles aquí"></ion-input>
+      </ion-item>
+
+      <div class="button-container">
+        <ion-button>Generar Reporte PDF</ion-button>
+        <ion-button >Generar Excel</ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

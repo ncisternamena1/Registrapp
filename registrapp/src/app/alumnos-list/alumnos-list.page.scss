@@ -1,4 +1,72 @@
+// Estilos para el header
+.header-toolbar {
+  --background: #012C56; // Fondo azul oscuro
+  --color: #FFFFFF; // Texto blanco
+}
+
+
+
+
+
 .content {
-    --background: #ffffff; /*fondo para pag*/
-  }
-  
+  --background: #FFB71B; // Fondo amarillo
+  padding: 0; // Elimina el espaciado adicional
+  margin: 0; // Asegúrate de que no haya margen extra
+  padding: 0;
+
+}
+
+.custom-card {
+  background: #FFB71B; // Fondo amarillo para el card
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Sombra ligera para el card
+  border-radius: 8px; // Bordes redondeados para el card
+  margin: 0; // Elimina el margen
+  padding: 0; // Elimina el padding del card
+}
+
+.custom-card ion-card-header {
+  background: #FFB71B; // Fondo amarillo para el card-header
+  color: #012C56; // Texto azul en el card-header
+  padding: 0x; // Añade padding para el card-header
+}
+
+.custom-card ion-card-content {
+  background: #FFB71B; // Fondo amarillo para el card-content
+  padding: 0; // Elimina el padding adicional
+}
+
+.alumno-list {
+  margin: 0;
+  padding: 0;
+}
+
+.alumno-item {
+  --background: #FFB71B; // Fondo amarillo para los items
+  --color: #012C56; // Texto azul
+  border-radius: 8px; // Bordes redondeados
+  margin-bottom: 8px; // Espacio entre los items
+  display: flex;
+  align-items: center;
+  padding: 0px;
+}
+
+ion-thumbnail {
+  --background: #012C56;
+  --border-radius: 50%; // Bordes redondeados
+  margin-right: 12px; // Espacio entre el thumbnail y el texto
+  padding: 0;
+}
+
+.custom-button {
+  --background: #012C56; // Fondo azul para los botones
+  --color: #FFFFFF; // Texto blanco
+  --border-radius: 10px; // Bordes redondeados
+  margin-top: 8px; // Espacio entre los botones
+  padding: 0px;
+}
+
+
+.list-ios {
+  background: var(--ion-item-background, var(--ion-background-color, #FFB71B));
+  padding: 0;
+}

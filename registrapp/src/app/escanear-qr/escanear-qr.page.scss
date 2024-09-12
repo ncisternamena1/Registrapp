@@ -1,0 +1,43 @@
+
+// Estilos para el header
+.header-toolbar {
+  --background: #012C56; // Fondo azul oscuro
+  --color: #FFFFFF; // Texto blanco
+}
+
+
+ion-header {
+    --background: #012C56; /* Fondo azul oscuro para los encabezados */
+    --color: #FFB71B; /* Color amarillo para el texto del encabezado */
+    border-bottom: 2px solid #FFB71B; /* Línea inferior amarilla para el encabezado */
+  }
+  
+  ion-toolbar {
+    --background: #012C56; /* Fondo azul oscuro para la barra de herramientas */
+    --color: #FFB71B; /* Color amarillo para el texto de la barra de herramientas */
+  }
+  
+  ion-title {
+    color: #FFB71B; /* Color amarillo para el título */
+  }
+  
+  #imgDuoc {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centrar la imagen */
+  }
+  
+  ion-content {
+    --background: #FFB71B; /* Fondo amarillo para el contenido */
+    padding: 16px; /* Espaciado interno */
+  }
+  
+  ion-header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto; /* Centrar la imagen */
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+  }
+  

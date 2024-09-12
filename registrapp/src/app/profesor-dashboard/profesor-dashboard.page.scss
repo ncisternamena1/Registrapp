@@ -1,0 +1,36 @@
+// Estilos para el header
+.header-toolbar {
+  --background: #012C56; // Fondo azul oscuro
+  --color: #FFFFFF; // Texto blanco
+}
+
+
+
+
+.content {
+    --background: #FFB71B;  // Fondo amarillo
+  }
+  
+  .section-list {
+    --background: #FFB71B;  // Fondo amarillo para la lista
+  }
+  
+  .section-item {
+    background: #FFB71B;  // Fondo amarillo para cada ítem de la lista
+    margin-bottom: 10px;
+    border-radius: 8px; // Bordes redondeados para los ítems de la lista
+  }
+  
+  .custom-button {
+    --background: #012C56; // Color azul para los botones
+    --color: white;         // Texto blanco en los botones
+    --border-radius: 12px; // Bordes redondeados
+    --padding-start: 16px;
+    --padding-end: 16px;
+    --padding-top: 12px;
+    --padding-bottom: 12px;
+  }
+  ion-list-header {
+    background: #012C56; 
+    --color: white;// Fondo amarillo para el encabezado de la lista
+  }

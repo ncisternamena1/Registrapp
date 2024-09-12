@@ -1,19 +1,47 @@
+// Estilos para el header
+.header-toolbar {
+  --background: #012C56; // Fondo azul oscuro
+  --color: #FFFFFF; // Texto blanco
+}
+
+
+ion-content {
+  --background: #FFB71B;  // Fondo amarillo
+}
+
+
+
 .custom-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
-  
-  .button-container {
-    width: 80%;
-  }
-  
-  .custom-button {
-    --border-radius: 20px;
-    margin-bottom: 20px;
-    
-    color: white;
-  }
-  
+  background-color: #FFB71B; /* Color de fondo amarillo */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.custom-button {
+  --background: #012C56; /* Color azul para los botones */
+  --border-radius: 12px; /* Bordes redondeados */
+  color: white;
+  font-size: 18px;
+  padding: 12px;
+  width: 100%;
+  align-self: normal;
+}
+
+.custom-button:hover {
+  --background: #011f40; /* Un azul más oscuro para hover */
+}
+.custom-content {
+  background-color: #FFB71B;  // Fondo amarillo
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
