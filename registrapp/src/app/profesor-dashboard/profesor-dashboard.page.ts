@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,10 +6,14 @@ import { Router } from '@angular/router';
   templateUrl: './profesor-dashboard.page.html',
   styleUrls: ['./profesor-dashboard.page.scss'],
 })
-export class ProfesorDashboardPage {
+export class ProfesorDashboardPage implements OnInit {
+  username: string | null = '';
 
   constructor(private router: Router) { }
 
+  ngOnInit() {
+    this.username = localStorage.getItem('username');
+  }
 
   openSection(section: string) {
     this.router.navigate(['/alumnos-list']);

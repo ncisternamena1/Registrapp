@@ -2,8 +2,6 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';  // Importar el Router
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
-
-
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
@@ -18,13 +16,16 @@ export class LoginPage {
       password: ['', Validators.required]
     });
   }
+
   onLogin() {
     const { username, password } = this.loginForm.value;
-    
+
     if (username === 'Lucas' && password === 'profesor123') {
+      localStorage.setItem('username', 'Lucas'); // Guardar nombre de usuario en localStorage
       this.router.navigate(['/profesor-dashboard'], { queryParams: { name: 'Lucas' } });
     } else if (username === 'Benjamin' && password === 'alumno123') {
-      this.router.navigate(['/alumno-dashboard'],{ queryParams: { name: 'Benjamin' } });
+      localStorage.setItem('username', 'Benjamin'); // Guardar nombre de usuario en localStorage
+      this.router.navigate(['/alumno-dashboard'], { queryParams: { name: 'Benjamin' } });
     } else {
       alert('Usuario o contraseña incorrecta');
     }
