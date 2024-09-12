@@ -6,8 +6,14 @@ import { Router } from '@angular/router';
   templateUrl: './alumno-dashboard.page.html',
   styleUrls: ['./alumno-dashboard.page.scss'],
 })
-export class AlumnoDashboardPage {
+export class AlumnoDashboardPage implements OnInit {
+  username: string | null = '';
+
   constructor(private router: Router) {}
+
+  ngOnInit() {
+    this.username = localStorage.getItem('username');
+  }
 
   verCursos() {
     // Aquí rediriges a la página de cursos
