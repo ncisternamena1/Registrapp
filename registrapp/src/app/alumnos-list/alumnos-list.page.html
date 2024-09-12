@@ -1,25 +1,31 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar class="header-toolbar">
     <ion-title>Listado de Alumnos</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true" class="content">
-  <ion-list>
-    <ion-list-header>
-      <ion-label>Alumnos</ion-label>
-    </ion-list-header>
+  <ion-card class="custom-card">
+    <ion-card-header>
+      <ion-card-title>Listado de Alumnos</ion-card-title>
+      <ion-card-subtitle>Gestion de alumnos</ion-card-subtitle>
+    </ion-card-header>
 
-    <ion-item *ngFor="let alumno of alumnos">
-      <ion-label>{{ alumno.nombre }}</ion-label>
-    </ion-item>
-  </ion-list>
+    <ion-card-content>
+      <ion-list class="alumno-list">
+        <ion-item *ngFor="let alumno of alumnos" class="alumno-item">
+          <ion-thumbnail slot="start">
+            <img src="assets/img/estudiante.png" alt="Thumbnail" class="thumbnail-img">
+          </ion-thumbnail>
+          <ion-label>{{ alumno.nombre }}</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
 
-  <ion-button expand="full" (click)="goToGenerateQR()">GENERAR QR</ion-button>
-  <ion-button expand="full" (click)="goToGenerateReport()">GENERAR REPORTE</ion-button>
-
-
-
+    <ion-card-content class="button-container">
+      <ion-button expand="full" class="custom-button" (click)="goToGenerateQR()">GENERAR QR</ion-button>
+      <ion-button expand="full" class="custom-button" (click)="goToGenerateReport()">GENERAR REPORTE</ion-button>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
-
 

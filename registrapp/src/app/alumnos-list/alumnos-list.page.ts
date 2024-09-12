@@ -8,10 +8,10 @@ import { Router } from '@angular/router';
 })
 export class AlumnosListPage {
   alumnos = [
-    { nombre: ' ADOLFO HITLER.' },
-    { nombre: ' OSAMA BIN LADEN' },
-    { nombre: 'SADDAM HUSSEIN.' },
-    { nombre: 'Juan' },
+    { nombre: ' PEPE TAPIA.' },
+    { nombre: ' RODRIGO SEPULVEDA ' },
+    { nombre: 'FELIPE CAMIROAGA.' },
+    { nombre: 'JUANITO MUSO' },
     
   ];
 

@@ -5,11 +5,18 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './generar-qr.page.html',
   styleUrls: ['./generar-qr.page.scss'],
 })
-export class GenerarQrPage implements OnInit {
+export class GenerarQrPage {
+  public progress = 0;
 
-  constructor() { }
+  constructor() {
+    setInterval(() => {
+      this.progress += 0.005;
 
-  ngOnInit() {
+      if (this.progress > 1) {
+        setTimeout(() => {
+          this.progress = 0;
+        }, 1000);
+      }
+    }, 50);
   }
-
 }

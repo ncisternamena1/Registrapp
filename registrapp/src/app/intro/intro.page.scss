@@ -1,0 +1,39 @@
+.intro-content {
+    --background: #FFB71B; // Fondo amarillo
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding: 0;
+  }
+  
+  .spinner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .logo {
+    width: 50%; // Ajusta según el tamaño que necesites
+    max-width: 300px; // Tamaño máximo del logo
+    margin-bottom: 20px;
+  }
+  
+  .spinner {
+    margin-bottom: 20px;
+  }
+  
+  .welcome-card {
+    background: #FFB71B; // Fondo amarillo
+    color: #012C56; // Texto azul
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Sombra ligera para el card
+    border-radius: 8px; // Bordes redondeados para el card
+    padding: 20px;
+    width: 80%; // Ajusta según el tamaño que necesites
+    max-width: 500px; // Tamaño máximo del card
+  }
+  
